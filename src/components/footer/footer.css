@@ -15,7 +15,7 @@
 
 @media (min-width: 1150px) {
   .footer_wrapper {
-    margin-inline: 40px 50px;
+    margin: 50px 50px 50px 40px;
     font-size: 22px;
   }
 }
