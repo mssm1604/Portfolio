@@ -27,6 +27,13 @@ export const projects = [
     usedTechnologies: ['javaScript', 'reactJS', 'nextJS', 'supabase']
   },
   {
+    name: 'Henry Augustus',
+    description:
+      'The goal in this project was to create a striking and minimalist design.',
+    images: ['/assets/projects_images/henry_main_pic.png'],
+    usedTechnologies: ['javaScript', 'reactJS', 'nextJS', 'mongoDB']
+  },
+  {
     name: 'ToroSpanish',
     description:
       'As a web developer, I build dreams as websites. ToroSpanish is one of them, a start up dedicated to teach lenguages such as English and Spanish. In addition to offering the best tours in Colombia.',
