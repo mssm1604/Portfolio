@@ -1,0 +1,21 @@
+.footer_wrapper {
+  margin: 40px 0px 40px 17px;
+  color: #d8d8d8;
+
+  .footer_list {
+    display: flex;
+    width: 100%;
+    padding: 10px 25px 10px 0px;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 25px;
+    background: #333;
+  }
+}
+
+@media (min-width: 1150px) {
+  .footer_wrapper {
+    margin-inline: 40px 50px;
+    font-size: 22px;
+  }
+}

@@ -1,0 +1,95 @@
+/* "https://santiagomonsalve.000webhostapp.com/" */
+@font-face {
+  font-family: 'Tomato Grotesk';
+  src: url('http://localhost:5173/css/fonts/tomato_grotesk/TomatoGrotesk-ExtraBold.otf')
+    format('opentype');
+
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: 'Tomato Grotesk';
+  src: url('http://localhost:5173/css/fonts/tomato_grotesk/TomatoGrotesk-Bold.otf')
+    format('opentype');
+
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Tomato Grotesk';
+  src: url('http://localhost:5173/css/fonts/tomato_grotesk/TomatoGrotesk-SemiBold.otf')
+    format('opentype');
+
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Tomato Grotesk';
+  src: url('http://localhost:5173/css/fonts/tomato_grotesk/TomatoGrotesk-Medium.otf')
+    format('opentype');
+
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Tomato Grotesk';
+  src: url('http://localhost:5173/css/fonts/tomato_grotesk/TomatoGrotesk-Regular.otf')
+    format('opentype');
+
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Tomato Grotesk';
+  src: url('http://localhost:5173/css/fonts/tomato_grotesk/TomatoGrotesk-Light.otf')
+    format('opentype');
+
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Tomato Grotesk';
+  src: url('http://localhost:5173/css/fonts/tomato_grotesk/TomatoGrotesk-ExtraLight.otf')
+    format('opentype');
+
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: 'Violet sans';
+  src: url('http://localhost:5173/css/fonts/violet_sans/VioletSans-Regular.otf')
+    format('opentype');
+}
+
+body {
+  font-family: 'Tomato Grotesk';
+  background-color: #242424;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+button,
+input,
+textarea {
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+textarea {
+  resize: none;
+}
