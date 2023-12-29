@@ -12,8 +12,6 @@ function App() {
     setScreeSizes(windowSize)
   }, [])
 
-  console.log(screenSizes)
-
   return (
     <>
       <Header />

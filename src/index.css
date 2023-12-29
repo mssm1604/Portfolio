@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: 'Tomato Grotesk';
-  src: url('css/fonts/tomato_grotesk/TomatoGrotesk-ExtraBold.otf')
+  src: url('/css/fonts/tomato_grotesk/TomatoGrotesk-ExtraBold.otf')
     format('opentype');
 
   font-weight: 800;
@@ -10,7 +10,7 @@
 
 @font-face {
   font-family: 'Tomato Grotesk';
-  src: url('css/fonts/tomato_grotesk/TomatoGrotesk-Bold.otf')
+  src: url('/css/fonts/tomato_grotesk/TomatoGrotesk-Bold.otf')
     format('opentype');
 
   font-weight: 700;
@@ -18,7 +18,7 @@
 
 @font-face {
   font-family: 'Tomato Grotesk';
-  src: url('css/fonts/tomato_grotesk/TomatoGrotesk-SemiBold.otf')
+  src: url('/css/fonts/tomato_grotesk/TomatoGrotesk-SemiBold.otf')
     format('opentype');
 
   font-weight: 600;
@@ -26,7 +26,7 @@
 
 @font-face {
   font-family: 'Tomato Grotesk';
-  src: url('css/fonts/tomato_grotesk/TomatoGrotesk-Medium.otf')
+  src: url('/css/fonts/tomato_grotesk/TomatoGrotesk-Medium.otf')
     format('opentype');
 
   font-weight: 500;
@@ -34,7 +34,7 @@
 
 @font-face {
   font-family: 'Tomato Grotesk';
-  src: url('css/fonts/tomato_grotesk/TomatoGrotesk-Regular.otf')
+  src: url('/css/fonts/tomato_grotesk/TomatoGrotesk-Regular.otf')
     format('opentype');
 
   font-weight: 400;
@@ -42,7 +42,7 @@
 
 @font-face {
   font-family: 'Tomato Grotesk';
-  src: url('css/fonts/tomato_grotesk/TomatoGrotesk-Light.otf')
+  src: url('/css/fonts/tomato_grotesk/TomatoGrotesk-Light.otf')
     format('opentype');
 
   font-weight: 300;
@@ -50,7 +50,7 @@
 
 @font-face {
   font-family: 'Tomato Grotesk';
-  src: url('css/fonts/tomato_grotesk/TomatoGrotesk-ExtraLight.otf')
+  src: url('/css/fonts/tomato_grotesk/TomatoGrotesk-ExtraLight.otf')
     format('opentype');
 
   font-weight: 200;
@@ -58,7 +58,7 @@
 
 @font-face {
   font-family: 'Violet sans';
-  src: url('css/fonts/violet_sans/VioletSans-Regular.otf')
+  src: url('/css/fonts/violet_sans/VioletSans-Regular.otf')
     format('opentype');
 }
 
