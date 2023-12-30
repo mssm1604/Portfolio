@@ -305,7 +305,6 @@ export function ToTopIcon() {
         stroke='#ffffffb3'
         strokeOpacity='0.2'
         strokeWidth='2'
-
       />
     </svg>
   )
@@ -333,6 +332,36 @@ export function LeftArrow() {
         d='M120.369 49.979L170.952 100.562L120.369 151.146'
         stroke='#2F2F2F'
         strokeWidth='7'
+        strokeMiterlimit='10'
+        strokeLinecap='round'
+        strokeLinejoin='round'
+      />
+    </svg>
+  )
+}
+
+export function IndicatorArrow() {
+  return (
+    <svg
+      width='33'
+      height='23'
+      viewBox='0 0 33 23'
+      fill='none'
+      xmlns='http://www.w3.org/2000/svg'
+    >
+      <path
+        opacity='0.4'
+        d='M2 11.365H24'
+        stroke='#D8D8D8'
+        strokeWidth='1.5'
+        strokeMiterlimit='10'
+        strokeLinecap='round'
+        strokeLinejoin='round'
+      />
+      <path
+        d='M21 2L30.3651 11.365L21 20.73'
+        stroke='#F34F08'
+        strokeWidth='2'
         strokeMiterlimit='10'
         strokeLinecap='round'
         strokeLinejoin='round'

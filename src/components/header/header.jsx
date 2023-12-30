@@ -9,7 +9,7 @@ export function Header() {
         </div>
 
         <nav className='navbar'>
-          <a>Projects</a>
+          <a href='#projects_section'>Projects</a>
           <a>About me</a>
         </nav>
 

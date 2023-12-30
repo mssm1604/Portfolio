@@ -4,9 +4,9 @@ import './projects.css'
 
 export function ProjectsSection() {
   return (
-    <section className='projects_section'>
+    <section id='projects_section' className='projects_section'>
       <h2 className='projects_section_tittle'>Projects</h2>
-      <QuickNavigation />
+      <QuickNavigation/>
       <ProjectsSummary />
     </section>
   )
