@@ -24,27 +24,31 @@ export const projects = [
     description:
       'This is an personal project focused on e-commerce. AtheShop is a clothing store, with a minimalistic design inpired by simplicity keeping the aspects that make the page looks good.',
     images: ['/assets/projects_images/athe_main_pic.png'],
-    usedTechnologies: ['javaScript', 'reactJS', 'nextJS', 'supabase']
+    usedTechnologies: ['javaScript', 'reactJS', 'nextJS', 'supabase'],
+    url: 'https://athe-shop.vercel.app'
   },
   {
     name: 'Henry Augustus',
     description:
       'The goal in this project was to create a striking and minimalist design.',
     images: ['/assets/projects_images/henry_main_pic.png'],
-    usedTechnologies: ['javaScript', 'reactJS', 'nextJS', 'mongoDB']
+    usedTechnologies: ['javaScript', 'reactJS', 'nextJS', 'mongoDB'],
+    url: ''
   },
   {
     name: 'ToroSpanish',
     description:
       'As a web developer, I build dreams as websites. ToroSpanish is one of them, a start up dedicated to teach lenguages such as English and Spanish. In addition to offering the best tours in Colombia.',
     images: ['/assets/projects_images/toro_main_pic.png'],
-    usedTechnologies: ['javaScript', 'reactJS', 'nextJS', 'mongoDB']
+    usedTechnologies: ['javaScript', 'reactJS', 'nextJS', 'mongoDB'],
+    url: 'https://www.torospanish.com/'
   },
   {
     name: 'Colombia API',
     description:
       'API Colombia is a public RESTful API that enable users to obtain a variety of public information about the country Colombia.',
     images: ['/assets/projects_images/colombiaAPI_main_pic.png'],
-    usedTechnologies: ['javaScript', 'express', 'nodeJS', 'mongoDB']
+    usedTechnologies: ['javaScript', 'express', 'nodeJS', 'mongoDB'],
+    url: ''
   }
 ]

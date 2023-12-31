@@ -24,6 +24,11 @@
     }
   }
 
+  .images_focus {
+    width: 100%;
+    overflow: hidden;
+  }
+
   .navigation_body {
     display: flex;
     padding: 0px 10px;
@@ -44,6 +49,7 @@
         align-items: center;
         gap: 20px;
         font-size: 27px;
+        margin-left: -36px;
       }
 
       .qn_list_items li {
@@ -51,6 +57,27 @@
         align-items: center;
         cursor: pointer;
         transition: color 130ms ease-out, transform 160ms ease-out;
+      }
+
+      .qn_list_items li:hover {
+        color: rgba(243, 79, 8, 0.8);
+
+      }
+
+      .qn_list_items li.active {
+        color: rgba(243, 79, 8, 0.8);
+        transform: translateX(35px);
+      }
+
+      .qn_list_items li span {
+        margin-right: 3px;
+        opacity: 0;
+        transition: opacity 50ms ease-out;
+      }
+
+      .qn_list_items li.active span {
+        display: block;
+        opacity: 100%;
       }
     }
 
@@ -80,6 +107,7 @@
     gap: 15px;
     height: 361px;
     width: 100%;
+    overflow: hidden;
 
     border-radius: 5px;
     /* margin-bottom: 10px; */
@@ -89,7 +117,7 @@
       justify-content: flex-end;
     }
 
-    .prj_button_wrapper button {
+    .prj_button_wrapper a {
       padding: 4px 23px;
       background: rgb(243 79 8 / 80%);
       color: #242424;
@@ -98,12 +126,12 @@
       transition: all 150ms ease-out;
     }
 
-    .prj_button_wrapper.disable button {
+    .prj_button_wrapper.disable a {
       opacity: 0;
       pointer-events: none;
     }
 
-    .prj_button_wrapper.active button {
+    .prj_button_wrapper.active a {
       opacity: 1;
       pointer-events: all;
     }
@@ -117,6 +145,8 @@
   height: 1.5px;
   position: absolute;
   background-color: #d8d8d8ad;
+  left: 50%;
+  transform: translateX(-50%);
   bottom: -40px;
 }
 
@@ -144,28 +174,12 @@
           gap: 30px;
           font-size: 30px;
           text-wrap: nowrap;
-        }
-
-        .qn_list_items li:hover {
-          color: rgba(243, 79, 8, 0.8);
-          transform: translateX(35px);
-        }
-
-        .qn_list_items li span {
-          padding-right: 3px;
-          /* display: none; */
-          opacity: 0;
-          transition: opacity 50ms ease-out;
-        }
-
-        .qn_list_items li:hover span {
-          display: block;
-          opacity: 100%;
+          margin-left: 0;
         }
       }
 
       .no_project_selected_wrapper {
-        height: 361px;
+        height: 100%;
         width: 100%;
         align-items: center;
         border-radius: 5px;
@@ -179,7 +193,9 @@
     }
 
     .project_preview_wrapper {
+      height: 400px;
       gap: 25px;
+
       .prj_button_wrapper {
         display: flex;
         justify-content: flex-end;
@@ -191,7 +207,4 @@
       }
     }
   }
-}
-
-@media (min-width: 1150px) {
 }
