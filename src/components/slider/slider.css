@@ -1,11 +1,13 @@
 .slider_images_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
   width: 100%;
-  aspect-ratio: 16/9;
   transition: transform 200ms ease-out;
 }
 
 .slider_images_wrapper img {
   width: 100%;
-  height: 344px;
+  height: 348px;
   object-fit: cover;
 }

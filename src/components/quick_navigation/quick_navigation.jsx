@@ -5,25 +5,39 @@ import { NoProjectSelected } from './project_preview'
 import { projects } from '../../constants/projects_const'
 import './quick_navigation.css'
 
-const images = projects.map(({ images }) => images)
+const projectUrlImg = { images: [], url: [] }
+projects.forEach(({ images: img, url: link }) => {
+  projectUrlImg.images.push(img)
+  projectUrlImg.url.push(link)
+})
 
 export function QuickNavigation() {
-  const [selectedIndex, setSelectedIndex] = useState(null)
-  const elementSelected = document.querySelector(
-    `[data-index='${selectedIndex}']`
-  )
-  elementSelected?.classList.add('active')
+  const [selectedElementName, setSelectedElementName] = useState('')
+  const elementSelected = document.getElementsByName(selectedElementName)[0]
+  elementSelected?.classList?.add('active')
 
   const handleMove = e => {
     const imagesFocus = document.getElementById('slider_images_wrapper')
-    const index = parseInt(e.target.getAttribute('data-index'))
+    const elementToFocus = e.target
+    const elementName = elementToFocus.getAttribute('name')
+    const index = elementToFocus.getAttribute('data-index')
     const moveValue = 100 / 4
 
-    if (isNaN(index) || index === selectedIndex) return
+    if (index === null || elementName === selectedElementName) return
 
     imagesFocus.style.transform = `translateY(-${index * moveValue}%)`
-    elementSelected?.classList.remove('active')
-    setSelectedIndex(index)
+    elementSelected?.classList?.remove('active')
+    setSelectedElementName(elementName)
+    changeButtonLink({ elementName })
+  }
+
+  const changeButtonLink = ({ elementName }) => {
+    const [{ url }] = projects.filter(
+      ({ name }) => name.toLowerCase() === elementName
+    )
+
+    const button = document.getElementsByName('btn_2project')[0]
+    button.setAttribute('href', url)
   }
 
   return (
@@ -65,15 +79,17 @@ export function QuickNavigation() {
         <div className='project_preview_wrapper'>
           <div className='images_focus'>
             <NoProjectSelected />
-            <Slider images={images} />
+            <Slider images={projectUrlImg.images} />
           </div>
           <div
             id='buttonWrapper'
             className={`prj_button_wrapper ${
-              selectedIndex ? 'active' : 'disable'
+              selectedElementName ? 'active' : 'disable'
             }`}
           >
-            <a href=''>Go to project</a>
+            <a name='btn_2project' href='' target='_blank'>
+              Go to project
+            </a>
           </div>
         </div>
       </div>

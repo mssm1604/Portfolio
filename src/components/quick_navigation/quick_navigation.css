@@ -27,6 +27,7 @@
   .images_focus {
     width: 100%;
     overflow: hidden;
+    border-radius: 5px;
   }
 
   .navigation_body {
@@ -61,7 +62,6 @@
 
       .qn_list_items li:hover {
         color: rgba(243, 79, 8, 0.8);
-
       }
 
       .qn_list_items li.active {
@@ -105,12 +105,8 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
-    height: 361px;
+    height: 344px;
     width: 100%;
-    overflow: hidden;
-
-    border-radius: 5px;
-    /* margin-bottom: 10px; */
 
     .prj_button_wrapper {
       display: flex;
@@ -179,8 +175,8 @@
       }
 
       .no_project_selected_wrapper {
-        height: 100%;
         width: 100%;
+        height: 348px;
         align-items: center;
         border-radius: 5px;
         background: #333;
@@ -199,6 +195,7 @@
       .prj_button_wrapper {
         display: flex;
         justify-content: flex-end;
+        padding-right: 3px;
       }
 
       .prj_button_wrapper button {
