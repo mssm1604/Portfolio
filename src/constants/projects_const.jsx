@@ -35,14 +35,14 @@ export const projects = [
     usedTechnologies: ['javaScript', 'reactJS', 'nextJS', 'mongoDB'],
     url: ''
   },
-  {
-    name: 'ToroSpanish',
-    description:
-      'As a web developer, I build dreams as websites. ToroSpanish is one of them, a start up dedicated to teach lenguages such as English and Spanish. In addition to offering the best tours in Colombia.',
-    images: ['/assets/projects_images/toro_main_pic.png'],
-    usedTechnologies: ['javaScript', 'reactJS', 'nextJS', 'mongoDB'],
-    url: 'https://www.torospanish.com/'
-  },
+  // {
+  //   name: 'ToroSpanish',
+  //   description:
+  //     'As a web developer, I build dreams as websites. ToroSpanish is one of them, a start up dedicated to teach lenguages such as English and Spanish. In addition to offering the best tours in Colombia.',
+  //   images: ['/assets/projects_images/toro_main_pic.png'],
+  //   usedTechnologies: ['javaScript', 'reactJS', 'nextJS', 'mongoDB'],
+  //   url: 'https://www.torospanish.com/'
+  // },
   {
     name: 'Colombia API',
     description:

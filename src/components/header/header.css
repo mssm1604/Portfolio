@@ -1,8 +1,8 @@
 .header {
   width: 100%;
-  position: absolute;
+  /* position: absolute; */
   z-index: 2;
-  margin-top: 10px;
+  margin-top: 15px;
 
   color: rgb(211 64 0);
 
@@ -10,14 +10,14 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
-    padding: 10px 13px;
+    padding: 10px 15px;
     align-items: flex-end;
 
-    background: #333;
+    background: rgb(51, 51, 51);
     box-shadow: 0px 12px 24px 0px rgba(0, 0, 0, 0.25);
 
     .brand_wrapper h3 {
-      font-size: 24px;
+      font-size: 22px;
       font-style: normal;
       font-weight: 400;
       line-height: 100%;
@@ -41,7 +41,8 @@
 
 @media (min-width: 1150px) {
   .header {
-  padding-inline: 60px;
+    position: absolute;
+    padding-inline: 60px;
     margin-top: 16px;
 
     .content_wrapper {
@@ -58,7 +59,7 @@
         font-size: 22px;
       }
 
-      .mobile_menu_wrapper{ 
+      .mobile_menu_wrapper {
         display: none;
       }
     }

@@ -21,7 +21,7 @@ export function QuickNavigation() {
     const elementToFocus = e.target
     const elementName = elementToFocus.getAttribute('name')
     const index = elementToFocus.getAttribute('data-index')
-    const moveValue = 100 / 4
+    const moveValue = 100 / 3
 
     if (index === null || elementName === selectedElementName) return
 
@@ -61,13 +61,13 @@ export function QuickNavigation() {
               </span>
               Henry Augustus
             </li>
-            <li data-index='3' name='torospanish'>
+            {/* <li data-index='3' name='torospanish'>
               <span>
                 <IndicatorArrow />
               </span>
               ToroSpanish
-            </li>
-            <li data-index='4' name='colombia api'>
+            </li> */}
+            <li data-index='3' name='colombia api'>
               <span>
                 <IndicatorArrow />
               </span>

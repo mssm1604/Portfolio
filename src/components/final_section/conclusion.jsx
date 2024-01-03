@@ -16,9 +16,8 @@ export function Conclusion() {
       <div className='to_top_wrapper'>
         <p>Want to go back to the top? Use the plane to get there.</p>
         <div className='icon_wrapper'>
-          <a href="#">
-
-          <ToTopIcon />
+          <a href='#' name='button_to_top'>
+            <ToTopIcon />
           </a>
         </div>
       </div>
