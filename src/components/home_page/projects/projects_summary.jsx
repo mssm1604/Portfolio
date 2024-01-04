@@ -1,5 +1,5 @@
 import { Project } from './project_template'
-import { projects as projectData } from '../../constants/projects_const'
+import { projects as projectData } from '../../../constants/projects_const'
 
 export function ProjectsSummary() {
   return (

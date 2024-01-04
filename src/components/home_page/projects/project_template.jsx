@@ -1,4 +1,4 @@
-import { technologies } from '../../constants/projects_const'
+import { technologies } from '../../../constants/projects_const'
 
 export function Project({ projectData }) {
   return projectData.map(project => (

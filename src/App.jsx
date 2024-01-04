@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react'
-import './App.css'
-import { FinalSection } from './components/final_section/final_section'
+import { FinalSection } from './components/home_page/final_section/final_section'
 import { Header } from './components/header/header'
-import { ProjectsSection } from './components/projects/projects_section'
+import { ProjectsSection } from './components/home_page/projects/projects_section'
+import './App.css'
 
 function App() {
   const [screenSizes, setScreeSizes] = useState()

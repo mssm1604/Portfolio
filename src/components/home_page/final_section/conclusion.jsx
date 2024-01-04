@@ -1,4 +1,4 @@
-import { LeftArrow, ToTopIcon } from '../icons/icons'
+import { LeftArrow, ToTopIcon } from '../../icons/icons'
 import './conclusion.css'
 
 export function Conclusion() {

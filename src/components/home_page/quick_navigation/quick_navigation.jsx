@@ -1,8 +1,8 @@
 import { useState } from 'react'
-import { IndicatorArrow } from '../icons/icons'
+import { IndicatorArrow } from '../../icons/icons'
 import { Slider } from '../slider/slider'
 import { NoProjectSelected } from './project_preview'
-import { projects } from '../../constants/projects_const'
+import { projects } from '../../../constants/projects_const'
 import './quick_navigation.css'
 
 const projectUrlImg = { images: [], url: [] }
@@ -13,8 +13,9 @@ projects.forEach(({ images: img, url: link }) => {
 
 export function QuickNavigation() {
   const [selectedElementName, setSelectedElementName] = useState('')
+
   const elementSelected = document.getElementsByName(selectedElementName)[0]
-  elementSelected?.classList?.add('active')
+  elementSelected && elementSelected.classList.add('active')
 
   const handleMove = e => {
     const imagesFocus = document.getElementById('slider_images_wrapper')
