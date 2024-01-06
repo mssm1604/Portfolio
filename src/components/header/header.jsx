@@ -1,16 +1,17 @@
+import { Link } from 'react-router-dom'
 import './header.css'
 
-export function Header() {
+export function Header({ position = 'absolute' }) {
   return (
-    <header className='header'>
+    <header className='header' style={{ position }}>
       <div className='content_wrapper'>
         <div className='brand_wrapper'>
-          <h3>SantiaGo M.</h3>
+          <Link to='/'>SantiaGo M.</Link>
         </div>
 
         <nav className='navbar'>
-          <a href='#projects_section'>Projects</a>
-          <a>About me</a>
+          <Link to='/#projects_section'>Projects</Link>
+          <Link to='/about'>About me</Link>
         </nav>
 
         <div className='mobile_menu_wrapper'>

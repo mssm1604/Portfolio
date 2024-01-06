@@ -1,5 +1,3 @@
-import { technologies } from '../../../constants/projects_const'
-
 export function Project({ projectData }) {
   return projectData.map(project => (
     <article
@@ -26,8 +24,8 @@ export function Project({ projectData }) {
 
         <footer className='used_technologies'>
           <ul>
-            {project.usedTechnologies?.map(technology => (
-              <li key={technology}>{technologies[technology]}</li>
+            {project.usedTechnologies?.map((technology, index) => (
+              <li key={index}>{technology}</li>
             ))}
           </ul>
         </footer>

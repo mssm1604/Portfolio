@@ -1,0 +1,21 @@
+.local_sec_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 10px 4%;
+
+  font-family: 'Violet sans';
+
+  color: #ffffffe0;
+  background: #333;
+
+  .local_header_h3 {
+    font-weight: 400;
+    line-height: 88%;
+    font-size: 23.5px;
+  }
+
+  .local_header_span {
+    font-size: 13.4px;
+  }
+}

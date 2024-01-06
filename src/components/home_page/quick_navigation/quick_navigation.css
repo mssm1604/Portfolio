@@ -140,10 +140,11 @@
   width: 102%;
   height: 1.5px;
   position: absolute;
-  background-color: #d8d8d8ad;
+  bottom: -40px;
   left: 50%;
   transform: translateX(-50%);
-  bottom: -40px;
+
+  background-color: #d8d8d8ad;
 }
 
 @media (min-width: 1033px) {

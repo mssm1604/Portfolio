@@ -8,23 +8,18 @@ import {
   SupabaseIcon
 } from '../components/icons/icons'
 
-export const technologies = {
-  javaScript: <JavaScriptIcon />,
-  reactJS: <ReactIcon />,
-  supabase: <SupabaseIcon />,
-  nodeJS: <NodeIcon />,
-  mongoDB: <MongoIcon />,
-  express: <ExpressIcon />,
-  nextJS: <NextIcon />
-}
-
 export const projects = [
   {
     name: 'AtheShop',
     description:
       'This is an personal project focused on e-commerce. AtheShop is a clothing store, with a minimalistic design inpired by simplicity keeping the aspects that make the page looks good.',
     images: ['/assets/projects_images/athe_main_pic.png'],
-    usedTechnologies: ['javaScript', 'reactJS', 'nextJS', 'supabase'],
+    usedTechnologies: [
+      <JavaScriptIcon key={1} />,
+      <ReactIcon key={2} />,
+      <NextIcon key={3} />,
+      <SupabaseIcon key={4} />
+    ],
     url: 'https://athe-shop.vercel.app'
   },
   {
@@ -32,7 +27,12 @@ export const projects = [
     description:
       'The goal in this project was to create a striking and minimalist design.',
     images: ['/assets/projects_images/henry_main_pic.png'],
-    usedTechnologies: ['javaScript', 'reactJS', 'nextJS', 'mongoDB'],
+    usedTechnologies: [
+      <JavaScriptIcon key={1} />,
+      <ReactIcon key={2} />,
+      <NextIcon key={3} />,
+      <MongoIcon key={4} />
+    ],
     url: ''
   },
   // {
@@ -48,7 +48,12 @@ export const projects = [
     description:
       'API Colombia is a public RESTful API that enable users to obtain a variety of public information about the country Colombia.',
     images: ['/assets/projects_images/colombiaAPI_main_pic.png'],
-    usedTechnologies: ['javaScript', 'express', 'nodeJS', 'mongoDB'],
+    usedTechnologies: [
+      <JavaScriptIcon key={1} />,
+      <ExpressIcon key={2} />,
+      <NodeIcon key={3} />,
+      <MongoIcon key={4} />
+    ],
     url: ''
   }
 ]

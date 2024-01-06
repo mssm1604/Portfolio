@@ -1,0 +1,72 @@
+.education_section_wrapper {
+  margin-top: 70px;
+
+  color: #ffffffe0;
+
+  .education_body {
+    display: flex;
+    flex-direction: column;
+    gap: 65px;
+    margin-top: 30px;
+
+    .ed_item_wrapper {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      padding-inline: 4%;
+
+      .item_title {
+        font-size: 23px;
+        font-weight: 400;
+        line-height: 100%;
+        color: rgb(211 64 0);
+      }
+
+      .item_content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        padding-inline: 15px 0px;
+
+        .university_string {
+          color: #d8d8d8ae;
+          font-size: 14px;
+          font-weight: 100;
+        }
+
+        .concentrations_string {
+          font-size: 20px;
+          font-weight: 300;
+          line-height: 120%; 
+          text-wrap: balance;
+        }
+      }
+
+      .status_wrapper {
+        margin-top: 27px ;
+        text-align: end;
+
+        .status_string {
+          padding: 3px 10px 0;
+          color: #d8d8d8d5;
+          background: #333;
+        }
+      }
+    }
+  }
+
+  .education_body article::after {
+    content: '';
+    position: absolute;
+    width: 92%;
+    height: 0.5px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background: #d8d8d8;
+  }
+}
