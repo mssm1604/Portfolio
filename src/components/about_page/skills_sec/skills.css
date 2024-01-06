@@ -1,4 +1,5 @@
 .skills_section_wrapper {
+  position: relative;
   margin-top: 90px;
 
   .skills_section_body {
@@ -27,7 +28,6 @@
         display: flex;
         align-items: center;
         height: 30px;
-
       }
 
       .skills_list li svg {
@@ -51,4 +51,15 @@
       background-color: #333;
     }
   }
+}
+
+.skills_section_wrapper::after {
+  content: '';
+  position: absolute;
+  width: 88%;
+  height: 0.5px;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #d8d8d8;
 }

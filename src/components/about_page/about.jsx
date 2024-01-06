@@ -4,11 +4,14 @@ import { Header } from '../header/header'
 import { EducationSection } from './education_sec/education'
 import { ExperienceSection } from './experience_sec/experience'
 import { SkillsSection } from './skills_sec/skills'
+import { FinalSection } from './final_section/final_section'
+import { Footer } from '../home_page/footer/footer'
 
 export function About() {
   useEffect(() => {
     document.title = 'Santiago Monsalve | About'
   }, [])
+
   return (
     <>
       <Header position={'relative'} />
@@ -17,6 +20,8 @@ export function About() {
       <EducationSection />
       <ExperienceSection />
       <SkillsSection />
+      <FinalSection />
+      <Footer />
     </>
   )
 }

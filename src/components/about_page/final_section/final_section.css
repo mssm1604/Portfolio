@@ -1,0 +1,38 @@
+.finalAbt_section_wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding-block: 25px;
+  margin-top: 90px;
+
+  font-family: Violet Sans;
+  color: #fff;
+  background: rgb(211 64 0);
+
+  .final_section_str {
+    font-size: 26px;
+    font-weight: 400;
+
+    color: #242424;
+  }
+
+  .cv_link {
+    font-family: "Tomato grotesk";
+    font-size: 19px;
+    font-weight: 200;
+    text-decoration-line: underline;
+  }
+
+  .abt_rectangle {
+    position: absolute;
+    width: 35px;
+    height: calc(100% + 40px);
+
+    top: 0;
+    left: 17px;
+    background: linear-gradient(180deg, #242424 21.77%, #333 100%);
+    z-index: 1;
+  }
+}
