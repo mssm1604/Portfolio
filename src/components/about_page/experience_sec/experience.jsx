@@ -1,5 +1,5 @@
 import { experience } from '../../../constants/experience'
-import { LocalHeader } from '../local_header/local_header'
+import { LocalHeader } from '../edu_exp_header/local_header'
 import { ExperienceItem } from './experience_item'
 import './experience.css'
 

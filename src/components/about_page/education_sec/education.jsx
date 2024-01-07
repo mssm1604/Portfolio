@@ -1,7 +1,7 @@
 import { EducationItem } from './education_item'
 import './education.css'
 import { educationList } from '../../../constants/education'
-import { LocalHeader } from '../local_header/local_header'
+import { LocalHeader } from '../edu_exp_header/local_header'
 
 export function EducationSection() {
   return (

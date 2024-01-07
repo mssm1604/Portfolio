@@ -1,5 +1,5 @@
 import { frontend, backend, database } from '../../../constants/skills'
-import { LocalHeader } from '../local_header/local_header'
+import { LocalHeader } from '../edu_exp_header/local_header'
 import './skills.css'
 
 export function SkillsSection() {
