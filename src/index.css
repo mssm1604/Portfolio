@@ -58,8 +58,11 @@
 
 @font-face {
   font-family: 'Violet sans';
-  src: url('/css/fonts/violet_sans/VioletSans-Regular.otf')
-    format('opentype');
+  src: url('/css/fonts/violet_sans/VioletSans-Regular.otf') format('opentype');
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -71,7 +74,6 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth;
 }
 
 a {

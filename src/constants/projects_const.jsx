@@ -50,8 +50,8 @@ export const projects = [
     images: ['/assets/projects_images/colombiaAPI_main_pic.png'],
     usedTechnologies: [
       <JavaScriptIcon key={1} />,
-      <ExpressIcon key={2} />,
       <NodeIcon key={3} />,
+      <ExpressIcon key={2} />,
       <MongoIcon key={4} />
     ],
     url: ''

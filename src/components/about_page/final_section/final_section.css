@@ -36,3 +36,13 @@
     z-index: 1;
   }
 }
+
+@media (min-width: 700px) {
+  .finalAbt_section_wrapper {
+    flex-direction: row;
+    justify-content: center;
+    gap: 70px;
+
+    padding-block: 40px;
+  }
+}
