@@ -1,7 +1,7 @@
 .header {
   width: 100%;
   /* position: absolute; */
-  z-index: 2;
+  z-index: 5;
 
   color: rgb(211 64 0);
 
