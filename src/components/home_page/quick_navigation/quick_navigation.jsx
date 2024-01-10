@@ -21,24 +21,23 @@ export function QuickNavigation() {
     const imagesFocus = document.getElementById('slider_images_wrapper')
     const elementToFocus = e.target
     const elementName = elementToFocus.getAttribute('name')
+
     const index = elementToFocus.getAttribute('data-index')
-    const moveValue = 100 / 3
+    const moveValue = imagesFocus.offsetHeight * index
 
     if (index === null || elementName === selectedElementName) return
 
-    imagesFocus.style.transform = `translateY(-${index * moveValue}%)`
+    imagesFocus.style.transform = `translateY(-${moveValue}px)`
     elementSelected?.classList?.remove('active')
     setSelectedElementName(elementName)
     changeButtonLink({ elementName })
   }
 
   const changeButtonLink = ({ elementName }) => {
-    const [{ url }] = projects.filter(
-      ({ name }) => name.toLowerCase() === elementName
-    )
+    console.log(elementName)
 
     const button = document.getElementsByName('btn_2project')[0]
-    button.setAttribute('href', url)
+    button.setAttribute('href', `#${elementName}`)
   }
 
   return (
@@ -88,7 +87,7 @@ export function QuickNavigation() {
               selectedElementName ? 'active' : 'disable'
             }`}
           >
-            <a name='btn_2project' href='' target='_blank'>
+            <a name='btn_2project' href=''>
               Go to project
             </a>
           </div>

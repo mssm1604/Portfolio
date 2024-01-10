@@ -23,12 +23,23 @@ export function DescriptionSection() {
 
           <div className='string_wrapper'>
             <p>
-              Hey there! My name is Santiago Monsalve and I am from Colombia.{' '}
+              Hey there! My name is Santiago Monsalve and I am from{' '}
+              <span>Colombia</span>. I have experience in other fields such as
+              electricity and customer service.
             </p>
+
             <p>
-              I’ve always liked the technology. In school, this was my favorite
-              subjet. However, once I finished, I dedided to study electricity
-              and after working for almost{' '}
+              {' '}
+              Before becoming a web developer, I worked as an industrial
+              electrician, thus acquiring almost two years in this field where I
+              learned a lot. I have also worked for a multinational company
+              based in the United States, providing customer service.
+            </p>
+
+            <p>
+              I am the person who always gives the best. When I develop
+              projects, I put more than 100% to give the best results, which are
+              based on good practices and beautiful designs.{' '}
             </p>
           </div>
         </div>

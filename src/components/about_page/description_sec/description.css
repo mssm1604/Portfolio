@@ -15,7 +15,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 5px;
     z-index: 1;
 
     .img_wrapper {
@@ -30,6 +30,10 @@
       height: 100%;
       object-fit: cover;
       filter: saturate(0) opacity(50%);
+    }
+
+    .string_wrapper p {
+      padding-bottom: 18px;
     }
   }
 
@@ -114,6 +118,10 @@
       .string_wrapper {
         padding: 30px;
         width: 60%;
+
+        & p {
+          padding-bottom: 18px;
+        }
       }
     }
 

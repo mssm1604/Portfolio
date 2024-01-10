@@ -65,6 +65,7 @@
     }
 
     .button_project_card {
+      text-align: center;
       width: 100%;
       padding-block: 7px;
       border-radius: 5px;

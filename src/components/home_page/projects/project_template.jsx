@@ -1,16 +1,19 @@
-export function Project({ projectData }) {
-  return projectData.map(project => (
-    <article
-      key={project.name}
-      className='project_card'
-      data-name={project.name}
-    >
+export function Project({ project }) {
+  return (
+    <article id={project.name.toLowerCase()} className='project_card'>
       <div className='info_project_wrapper'>
         <div className='info_abt_project'>
           <h3 className='prj_title'>{project.name}</h3>
           <p className='prj_description'>{project.description}</p>
         </div>
-        <button className='button_project_card'>Visit site</button>
+        <a
+          href={project.url}
+          target='_blank'
+          rel='noreferrer'
+          className='button_project_card'
+        >
+          Visit site
+        </a>
       </div>
 
       <section className='images_and_technologies_wrapper'>
@@ -31,5 +34,5 @@ export function Project({ projectData }) {
         </footer>
       </section>
     </article>
-  ))
+  )
 }

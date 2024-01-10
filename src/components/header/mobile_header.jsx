@@ -1,13 +1,14 @@
 import { useNavigate } from 'react-router-dom'
-import { useRef } from 'react'
+import { useEffect, useRef } from 'react'
 import './mobile_header.css'
+import { IndicatorArrow } from '../icons/icons'
 
 export function MobileHeader() {
   const mobileHeader = useRef()
   const navigate = useNavigate()
 
   const handleNavOnClick = e => {
-    const navigateTo = e.target.getAttribute('data-navigateto')
+    const navigateTo = e.target.getAttribute('data-name')
     const currentPage = window.location.pathname
     document.body.style.overflow = 'auto'
 
@@ -18,6 +19,16 @@ export function MobileHeader() {
     }
   }
 
+  useEffect(() => {
+    const currentPage = window.location.pathname
+    const navLinks = document.querySelectorAll('.mobile_nav_item')
+
+    navLinks.forEach(element => {
+      element.getAttribute('data-name') === currentPage &&
+        element.classList.add('active')
+    })
+  }, [])
+
   return (
     <div
       ref={mobileHeader}
@@ -26,15 +37,34 @@ export function MobileHeader() {
       data-visible='false'
     >
       <nav className='mobile_nav' onClick={handleNavOnClick}>
-        <span data-navigateto='/'>Projects</span>
-        <span data-navigateto='/about'>About</span>
+        <a className='mobile_nav_item' data-name='/'>
+          <span>
+            <IndicatorArrow />
+          </span>
+          Projects
+        </a>
+        <a className='mobile_nav_item' data-name='/about'>
+          <span>
+            <IndicatorArrow />
+          </span>
+          About
+        </a>
       </nav>
 
       <footer className='mobile_footer'>
         <nav className='mobile_footer_nav'>
-          <a href=''>GitHub</a>
-          <a href=''>LinkedIn</a>
-          <a href=''>Instagram</a>
+          <a href='https://github.com/mssm1604' target='_black'>
+            GitHub
+          </a>
+          <a
+            href='https://www.linkedin.com/in/santiago-monsalve/'
+            target='_black'
+          >
+            LinkedIn
+          </a>
+          <a href='https://www.instagram.com/santiago_hmz' target='_black'>
+            Instagram
+          </a>
         </nav>
       </footer>
     </div>

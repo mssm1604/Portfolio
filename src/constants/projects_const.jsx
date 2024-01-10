@@ -33,7 +33,7 @@ export const projects = [
       <NextIcon key={3} />,
       <MongoIcon key={4} />
     ],
-    url: ''
+    url: '#'
   },
   // {
   //   name: 'ToroSpanish',
@@ -54,6 +54,6 @@ export const projects = [
       <ExpressIcon key={2} />,
       <MongoIcon key={4} />
     ],
-    url: ''
+    url: '#'
   }
 ]

@@ -2,7 +2,7 @@ export function HtmlIcon() {
   return (
     <svg
       xmlns='http://www.w3.org/2000/svg'
-      width='auto'
+      width='60'
       height='60'
       viewBox='0 0 43 60'
       fill='none'
@@ -19,7 +19,7 @@ export function CssIcon() {
   return (
     <svg
       xmlns='http://www.w3.org/2000/svg'
-      width='auto'
+      width='60'
       height='60'
       viewBox='0 0 61 60'
       fill='none'
@@ -353,7 +353,7 @@ export function ToTopIcon() {
   return (
     <svg
       width='56'
-      height='auto'
+      height='71'
       viewBox='0 0 55 66'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'

@@ -8,7 +8,6 @@ export function Header({ position = 'absolute' }) {
 
   const handleShowMobileNav = () => {
     const elementToShow = document.getElementById('mobile_header')
-
     const ifVisible = elementToShow.getAttribute('data-visible')
 
     if (ifVisible === 'false') {
