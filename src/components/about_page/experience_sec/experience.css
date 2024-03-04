@@ -34,7 +34,7 @@
     .position_description_wrapper p {
       font-size: 19px;
       font-weight: 100;
-      line-height: 130%; 
+      line-height: 130%;
       letter-spacing: 0.26px;
     }
 
@@ -43,7 +43,7 @@
     }
 
     .company_title {
-        text-align: right;
+      text-align: right;
 
       .company {
         color: #d8d8d8ae;
@@ -65,10 +65,45 @@
     position: absolute;
     width: 88%;
     height: 0.5px;
-    bottom:0;
+    bottom: 0;
     left: 50%;
     transform: translateX(-50%);
 
     background: #d8d8d8;
+  }
+}
+
+@media (min-width: 1024px) {
+  .experience_section_wrapper {
+    .experience_body .exp_item_wrapper {
+      flex-direction: row;
+      align-items: flex-end;
+      gap: 30px;
+
+      padding-inline: 5px;
+      padding-bottom: 30px;
+      margin-inline: 60px;
+
+      .position_description_wrapper {
+        width: 60%;
+
+        .duration {
+          font-size: 26px;
+        }
+      }
+
+      .position_description_wrapper p {
+        font-size: 25px;
+      }
+
+      .company_title {
+        margin-block: auto;
+        width: 40%;
+      }
+    }
+
+    .experience_body .exp_item_wrapper::after {
+      width: 100%;
+    }
   }
 }

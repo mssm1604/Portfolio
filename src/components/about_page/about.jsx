@@ -5,7 +5,7 @@ import { EducationSection } from './education_sec/education'
 import { ExperienceSection } from './experience_sec/experience'
 import { SkillsSection } from './skills_sec/skills'
 import { FinalSection } from './final_section/final_section'
-import { Footer } from '../home_page/footer/footer'
+import { Footer } from '../footer/footer'
 
 export function About() {
   useEffect(() => {

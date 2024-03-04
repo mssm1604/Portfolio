@@ -25,6 +25,14 @@
       display: none;
     }
 
+    .navbar a {
+      transition: color 150ms ease-out;
+    }
+
+    .navbar a:hover {
+      color: #d8d8d8a8;
+    }
+
     .mobile_menu_wrapper {
       display: flex;
 
@@ -37,7 +45,7 @@
   }
 }
 
-@media (min-width: 1150px) {
+@media (min-width: 1024px) {
   .header {
     position: absolute;
     padding-inline: 60px;

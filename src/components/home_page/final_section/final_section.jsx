@@ -1,4 +1,4 @@
-import { Footer } from '../footer/footer'
+import { Footer } from '../../footer/footer'
 import { Conclusion } from './conclusion'
 import { ContactMe } from './contact_me'
 

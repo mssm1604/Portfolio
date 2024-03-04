@@ -120,15 +120,14 @@
   }
 
   .project_card {
-    padding: 50px 40px;
+    padding: 50px 60px;
     flex-direction: row;
-    align-items: center;
     gap: 50px;
 
     .info_project_wrapper {
       flex-direction: column;
       align-items: center;
-      padding-inline: 30px;
+      padding-inline: 0px;
       gap: 20px;
       width: 40%;
 
@@ -170,7 +169,7 @@
       width: 100%;
 
       .image_project_wrapper {
-        height: 425px;
+        aspect-ratio: 16/9;
 
         .image_project {
           width: 100%;

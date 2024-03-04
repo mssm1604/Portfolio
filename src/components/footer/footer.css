@@ -13,9 +13,9 @@
   }
 }
 
-@media (min-width: 1150px) {
+@media (min-width: 1024px) {
   .footer_wrapper {
-    margin: 50px 50px 50px 40px;
+    margin: 50px 60px 50px 40px;
     font-size: 22px;
   }
 }

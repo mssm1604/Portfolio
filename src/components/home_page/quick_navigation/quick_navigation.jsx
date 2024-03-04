@@ -6,6 +6,7 @@ import { projects } from '../../../constants/projects_const'
 import './quick_navigation.css'
 
 const projectUrlImg = { images: [], url: [] }
+
 projects.forEach(({ images: img, url: link }) => {
   projectUrlImg.images.push(img)
   projectUrlImg.url.push(link)
@@ -49,25 +50,28 @@ export function QuickNavigation() {
       <div className='navigation_body'>
         <nav className='qn_navbar'>
           <ul onClick={handleMove} className='qn_list_items'>
-            <li data-index='1' name='atheshop'>
-              <span>
-                <IndicatorArrow />
-              </span>
-              AtheShop
-            </li>
-            <li data-index='2' name='henry augustus'>
+            <li data-index='1' name='henry augustus'>
               <span>
                 <IndicatorArrow />
               </span>
               Henry Augustus
             </li>
-            {/* <li data-index='3' name='torospanish'>
+
+            <li data-index='2' name='css tools'>
               <span>
                 <IndicatorArrow />
               </span>
-              ToroSpanish
-            </li> */}
-            <li data-index='3' name='colombia api'>
+              Css Tools
+            </li>
+
+            <li data-index='3' name='atheshop'>
+              <span>
+                <IndicatorArrow />
+              </span>
+              AtheShop
+            </li>
+
+            <li data-index='4' name='colombia api'>
               <span>
                 <IndicatorArrow />
               </span>
