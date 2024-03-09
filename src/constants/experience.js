@@ -16,13 +16,13 @@ export const experience = [
       'I improved the accessibility of the circuits of the expanding machines through the use of design standards in electrical circuits.',
     company: 'Industria partista colombiana (IPC)',
     title: 'Industrial Electrician'
-  },
-  {
-    duration: '10.2023 - Present',
-    positionDescriptionP1:
-      'I have had the opportunity to provide technical support to clients, solving their video, telephone and internet problems. I am proud to say that my average rating - according to quality controls and customers - is 9.5 out of 10.',
-    positionDescriptionP2: '',
-    company: 'Altice USA',
-    title: 'Bilingual technical support '
   }
+  // {
+  //   duration: '10.2023 - Present',
+  //   positionDescriptionP1:
+  //     'I have had the opportunity to provide technical support to clients, solving their video, telephone and internet problems. I am proud to say that my average rating - according to quality controls and customers - is 9.5 out of 10.',
+  //   positionDescriptionP2: '',
+  //   company: 'Altice USA',
+  //   title: 'Bilingual technical support '
+  // }
 ]

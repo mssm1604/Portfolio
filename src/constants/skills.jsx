@@ -8,14 +8,16 @@ import {
   NodeIcon,
   ReactIcon,
   SupabaseIcon,
-  SqlIcon
+  SqlIcon,
+  TailwindIcon
 } from '../components/icons/icons'
 
 export const frontend = [
   <HtmlIcon key={1} />,
   <CssIcon key={2} />,
   <JavaScriptIcon key={3} />,
-  <ReactIcon key={4} />
+  <ReactIcon key={4} />,
+  <TailwindIcon key={5} />
 ]
 
 export const backend = [

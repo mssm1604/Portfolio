@@ -110,13 +110,14 @@
 
     .about_info_wrapper {
       flex-direction: row;
+      gap: 0;
 
       .img_wrapper {
         width: 40%;
       }
 
       .string_wrapper {
-        padding: 30px;
+        padding: 40px 50px;
         width: 60%;
 
         & p {
