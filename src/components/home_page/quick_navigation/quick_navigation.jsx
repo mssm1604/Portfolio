@@ -48,7 +48,7 @@ export function QuickNavigation() {
       <div className='navigation_body'>
         <nav className='qn_navbar'>
           <ul onClick={handleMove} className='qn_list_items'>
-            <li data-index='1' name='toroSpanish'>
+            <li data-index='1' name='torospanish'>
               <span>
                 <IndicatorArrow />
               </span>

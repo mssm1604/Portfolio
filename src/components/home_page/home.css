@@ -19,7 +19,7 @@
       min-height: 370px;
       max-height: 480px;
 
-      background: url('/assets/IMG_1687.jpg') center/cover;
+      background: url('/assets/main_pic.webp') center/cover;
       filter: saturate(0) opacity(50%);
       z-index: 0;
     }

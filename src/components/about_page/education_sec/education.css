@@ -115,7 +115,7 @@
         gap: 35px;
 
         padding-inline: 5px;
-        padding-bottom: 30px;
+        padding-bottom: 0;
         margin-inline: 60px;
 
         .item_title {

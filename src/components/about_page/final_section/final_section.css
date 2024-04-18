@@ -49,8 +49,7 @@
 
 @media (min-width: 1024px) {
   .finalAbt_section_wrapper {
-    /* margin-inline: 60px; */
-    padding-block: 90px;
+    padding-block: 150px;
 
     .final_section_str {
       font-size: 32px;
