@@ -10,6 +10,19 @@ import {
 
 export const projects = [
   {
+    name: 'ToroSpanish',
+    description:
+      'ToroSpanish is a company dedicated to Colombian national tourism, with its main focus on Medellín. What we wanted to achieve here was a simplistic and eye-catching website, where users can easily book their tours and get the necessary information about them.',
+    images: ['/assets/projects_images/toro_main_pic.png'],
+    usedTechnologies: [
+      <JavaScriptIcon key={1} />,
+      <ReactIcon key={2} />,
+      <NextIcon key={3} />,
+      <SupabaseIcon key={4} />
+    ],
+    url: 'https://toro-spanish.vercel.app'
+  },
+  {
     name: 'Henry Augustus',
     description:
       'The goal in this project was to create a striking and minimalist design.',
@@ -42,19 +55,18 @@ export const projects = [
       <SupabaseIcon key={4} />
     ],
     url: 'https://athe-shop.vercel.app'
-  },
-
-  {
-    name: 'Colombia API',
-    description:
-      'API Colombia is a public RESTful API that enable users to obtain a variety of public information about the country Colombia.',
-    images: ['/assets/projects_images/colombiaAPI_main_pic.png'],
-    usedTechnologies: [
-      <JavaScriptIcon key={1} />,
-      <NodeIcon key={3} />,
-      <ExpressIcon key={2} />,
-      <MongoIcon key={4} />
-    ],
-    url: ''
   }
+  // {
+  //   name: 'Colombia API',
+  //   description:
+  //     'API Colombia is a public RESTful API that enable users to obtain a variety of public information about the country Colombia.',
+  //   images: ['/assets/projects_images/colombiaAPI_main_pic.png'],
+  //   usedTechnologies: [
+  //     <JavaScriptIcon key={1} />,
+  //     <NodeIcon key={3} />,
+  //     <ExpressIcon key={2} />,
+  //     <MongoIcon key={4} />
+  //   ],
+  //   url: ''
+  // }
 ]

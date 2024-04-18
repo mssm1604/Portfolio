@@ -6,7 +6,7 @@ export function FinalSection() {
       <div className='abt_rectangle'></div>
 
       <h4 className="final_section_str">Download my CV</h4>
-      <a href='' className='cv_link'>Click here</a>
+      <a href='/santiago_monsalve_cv.pdf' target='_blank' className='cv_link'>Click here</a>
     </section>
   )
 }

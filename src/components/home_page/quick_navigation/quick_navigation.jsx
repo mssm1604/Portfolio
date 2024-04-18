@@ -35,8 +35,6 @@ export function QuickNavigation() {
   }
 
   const changeButtonLink = ({ elementName }) => {
-    console.log(elementName)
-
     const button = document.getElementsByName('btn_2project')[0]
     button.setAttribute('href', `#${elementName}`)
   }
@@ -50,33 +48,40 @@ export function QuickNavigation() {
       <div className='navigation_body'>
         <nav className='qn_navbar'>
           <ul onClick={handleMove} className='qn_list_items'>
-            <li data-index='1' name='henry augustus'>
+            <li data-index='1' name='toroSpanish'>
+              <span>
+                <IndicatorArrow />
+              </span>
+              ToroSpanish
+            </li>
+
+            <li data-index='2' name='henry augustus'>
               <span>
                 <IndicatorArrow />
               </span>
               Henry Augustus
             </li>
 
-            <li data-index='2' name='css tools'>
+            <li data-index='3' name='css tools'>
               <span>
                 <IndicatorArrow />
               </span>
               Css Tools
             </li>
 
-            <li data-index='3' name='atheshop'>
+            <li data-index='4' name='atheshop'>
               <span>
                 <IndicatorArrow />
               </span>
               AtheShop
             </li>
 
-            <li data-index='4' name='colombia api'>
+            {/* <li data-index='4' name='colombia api'>
               <span>
                 <IndicatorArrow />
               </span>
               Colombia API
-            </li>
+            </li> */}
           </ul>
         </nav>
 
@@ -91,7 +96,7 @@ export function QuickNavigation() {
               selectedElementName ? 'active' : 'disable'
             }`}
           >
-            <a name='btn_2project' href=''>
+            <a name='btn_2project' href='/' aria-disabled>
               Go to project
             </a>
           </div>
