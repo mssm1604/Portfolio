@@ -17,7 +17,7 @@ export const projects = [
       <NextIcon key={3} />,
       <SupabaseIcon key={4} />
     ],
-    url: 'https://toro-spanish.vercel.app'
+    url: 'https://torospanish.vercel.app'
   },
   {
     name: 'Henry Augustus',
@@ -38,7 +38,7 @@ export const projects = [
       'All of us who develop Frontend have wanted to have help to work in a faster, more efficient and easier way. CSS tools are designed to make things easier for us. We are still working to add more features.',
     images: ['/assets/projects_images/cssTools_main_pic.webp'],
     usedTechnologies: [<JavaScriptIcon key={1} />, <ReactIcon key={2} />],
-    url: 'https://css-tools-five.vercel.app/'
+    url: 'https://css-tools-sm.vercel.app/'
   },
   {
     name: 'AtheShop',
