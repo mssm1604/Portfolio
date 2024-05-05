@@ -17,7 +17,7 @@ export const projects = [
       <NextIcon key={3} />,
       <SupabaseIcon key={4} />
     ],
-    url: 'https://torospanish.vercel.app'
+    url: 'https://torospanish.com'
   },
   {
     name: 'Henry Augustus',
