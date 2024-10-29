@@ -1,8 +1,17 @@
 export const experience = [
   {
+    duration: '06.2024 - Present',
+    positionDescriptionP1:
+      'During this role, providing the best support to players from all over the world has been a rewarding experience, this is also because I am supporting people who play my favorite games.',
+    positionDescriptionP2:
+      'Analyzing a lot of data to come to a conclusion has been the biggest focus. Having excellent performance while prioritizing quality and player satisfaction has been something we have been able to achieve.',
+    company: 'Concentrix',
+    title: 'Video games support'
+  },
+  {
     duration: '09.2022 - Present',
     positionDescriptionP1:
-      'I have worked on very interesting projects that have given me a lot of experience, among them the most notable: clothing store, dog snack store and a language teaching site.',
+      'I have worked on very interesting projects that have given me a lot of experience, among them the most notable: clothing store, dog snack store and a tours site.',
     positionDescriptionP2:
       'Thanks to my education and the skills I have acquired in my other jobs, I’ve been able to build these projects from scratch to completion.',
     company: 'Self employee',

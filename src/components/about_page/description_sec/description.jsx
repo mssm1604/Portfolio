@@ -22,30 +22,49 @@ export function DescriptionSection() {
           </picture>
 
           <div className='string_wrapper'>
-            <p>
-              Hey there! My name is Santiago Monsalve and I am from{' '}
-              <span>Colombia</span>. I have experience in fields such as
-              electricity.
+            <p>Hey there!</p>
+
+            <p className='first_paragraph'>
+              My name is Santiago, from <span>Medellin, Colombia.</span> I have
+              experience in fields such as electricity, video game support,
+              and... of course, web develpment. I also love table tennis and a
+              good{' '}
+              <a
+                target='_blank'
+                href='https://www.pepesbbq.com/news-item/fast-authentic-salchipapas-recipe/'
+              >
+                salchipapa
+              </a>
+              .
             </p>
 
             <p>
-              {' '}
-              Before becoming a web developer, I worked as an industrial
-              electrician, thus acquiring almost two years in this field where I
-              learned a lot.
+              In my previous jobs I have learned how to work under pressure,
+              teamwork and problem solving. I am proud to say that{' '}
+              <span>
+                I was able to improve the performance of several machines saving
+                the company a lot of money
+              </span>
+              .
             </p>
 
             <p>
-              I am the person who always gives the best. When I develop
-              projects, I put more than 100% to give the best results, which are
-              based on good practices and beautiful designs.{' '}
+              When developing web projects, I always want to{' '}
+              <span>
+                {' '}
+                make a difference with my designs by prioritizing good practices
+                and excellent performance{' '}
+              </span>{' '}
+              giving a rewarding experience to customers.
             </p>
           </div>
         </div>
+
+        <div></div>
       </section>
 
       <div className='pointer_experience_wrapper'>
-        <p>Experience below</p>
+        <p>More below</p>
         <span>
           <DownArrow />
         </span>

@@ -17,8 +17,8 @@ export function About() {
       <Header position={'relative'} />
 
       <DescriptionSection />
-      <EducationSection />
       <ExperienceSection />
+      <EducationSection />
       <SkillsSection />
       <FinalSection />
       <Footer />
