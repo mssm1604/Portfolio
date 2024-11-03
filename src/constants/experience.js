@@ -4,7 +4,7 @@ export const experience = [
     positionDescriptionP1:
       'During this role, providing the best support to players from all over the world has been a rewarding experience, this is also because I am supporting people who play my favorite games.',
     positionDescriptionP2:
-      'Analyzing a lot of data to come to a conclusion has been the biggest focus. Having excellent performance while prioritizing quality and player satisfaction has been something we have been able to achieve.',
+      'Analyzing big amounts of data to avoid phishing attempts is biggest focus. Having excellent performance while prioritizing quality and player satisfaction has been something we have been able to achieve.',
     company: 'Concentrix',
     title: 'Video games support'
   },

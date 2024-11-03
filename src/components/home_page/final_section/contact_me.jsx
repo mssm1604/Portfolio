@@ -4,7 +4,8 @@ export function ContactMe() {
   return (
     <section className='contact_me_wrapper'>
       <h3 className='ctm_title'>Contact me</h3>
-      <form action='https://formsubmit.co/smonsalve386@gmail.com' method='POST'>
+
+      <form action='https://formsubmit.co/smonsalve386@gmail.com' method='post'>
         <div className='input_wrapper'>
           <label className='label' htmlFor='name'>
             Name

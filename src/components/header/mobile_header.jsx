@@ -37,18 +37,19 @@ export function MobileHeader() {
       data-visible='false'
     >
       <nav className='mobile_nav' onClick={handleNavOnClick}>
-        <a className='mobile_nav_item' href='' data-name='/'>
+        <button className='mobile_nav_item' data-name='/'>
           <span>
             <IndicatorArrow />
           </span>
           Projects
-        </a>
-        <a className='mobile_nav_item' href='' data-name='/about'>
+        </button>
+
+        <button className='mobile_nav_item' data-name='/about'>
           <span>
             <IndicatorArrow />
           </span>
           About
-        </a>
+        </button>
       </nav>
 
       <footer className='mobile_footer'>

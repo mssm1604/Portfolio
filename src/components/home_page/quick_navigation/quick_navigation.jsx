@@ -42,7 +42,7 @@ export function QuickNavigation() {
   return (
     <section className='quick_navigation_wrapper'>
       <header className='navigation_header'>
-        <h5 className='nav_header_string'>Quick navigation</h5>
+        <span className='nav_header_string'>Quick navigation</span>
       </header>
 
       <div className='navigation_body'>
@@ -55,25 +55,25 @@ export function QuickNavigation() {
               ToroSpanish
             </li>
 
-            <li data-index='2' name='henry augustus'>
-              <span>
-                <IndicatorArrow />
-              </span>
-              Henry Augustus
-            </li>
-
-            <li data-index='3' name='css tools'>
+            <li data-index='2' name='css tools'>
               <span>
                 <IndicatorArrow />
               </span>
               Css Tools
             </li>
 
-            <li data-index='4' name='atheshop'>
+            <li data-index='3' name='atheshop'>
               <span>
                 <IndicatorArrow />
               </span>
               AtheShop
+            </li>
+
+            <li data-index='4' name='henry augustus'>
+              <span>
+                <IndicatorArrow />
+              </span>
+              Henry Augustus
             </li>
 
             {/* <li data-index='4' name='colombia api'>
