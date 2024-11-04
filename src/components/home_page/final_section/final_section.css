@@ -1,5 +1,7 @@
 .contact_me_wrapper {
-  padding: 60px 25px 30px 25px;
+  display: flex;
+  align-items: center;
+  padding: 60px 25px;
   color: #d8d8d8;
 
   .ctm_title {
@@ -9,6 +11,36 @@
     font-weight: 400;
     letter-spacing: 0.88px;
     margin-bottom: 40px;
+  }
+
+  .contact_me_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+    font-size: 40px;
+    color: #d8d8d8;
+
+    padding-block: 10px;
+    border-radius: 5px;
+
+    width: 100%;
+
+    text-decoration: underline;
+    transition: color 200ms ease-out;
+  }
+
+  .contact_me_btn:hover {
+    color: #fff;
+  }
+
+  .contact_me_btn span {
+    rotate: 180deg;
+
+    svg {
+      height: 50px;
+    }
   }
 }
 
@@ -68,7 +100,15 @@
 
     .contact_me_wrapper {
       width: 45%;
-      padding: 80px 50px 0 50px;
+      padding: 80px 50px;
+
+      .contact_me_btn {
+        font-size: 55px;
+
+        span svg {
+          height: 60px;
+        }
+      }
     }
   }
 }

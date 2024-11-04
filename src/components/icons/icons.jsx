@@ -376,7 +376,6 @@ export function ToTopIcon() {
 export function LeftArrow() {
   return (
     <svg
-      width='111'
       height='121'
       viewBox='0 0 201 201'
       fill='none'
@@ -385,16 +384,16 @@ export function LeftArrow() {
       <path
         opacity='0.75'
         d='M29.2853 100.562H169.535'
-        stroke='#333333'
-        strokeWidth='5'
+        stroke='#333'
+        strokeWidth='10'
         strokeMiterlimit='10'
         strokeLinecap='round'
         strokeLinejoin='round'
       />
       <path
         d='M120.369 49.979L170.952 100.562L120.369 151.146'
-        stroke='#2F2F2F'
-        strokeWidth='7'
+        stroke='#d34000'
+        strokeWidth='15'
         strokeMiterlimit='10'
         strokeLinecap='round'
         strokeLinejoin='round'
