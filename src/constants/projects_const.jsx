@@ -1,9 +1,4 @@
-import {
-  JavaScriptIcon,
-  NextIcon,
-  ReactIcon,
-  SupabaseIcon
-} from '../components/icons/icons'
+import { JavaScriptIcon, NextIcon, ReactIcon, SupabaseIcon } from '../components/icons/icons'
 
 export const projects = [
   {
@@ -51,7 +46,7 @@ export const projects = [
       <NextIcon key={3} />,
       <SupabaseIcon key={4} />
     ],
-    url: '#'
+    url: 'https://henry-augustus.vercel.app'
   }
   // {
   //   name: 'Colombia API',
