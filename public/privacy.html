@@ -1,0 +1,607 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy Policy — Santiago Monsalve</title>
+    <meta
+      name="description"
+      content="Privacy policy for projects and applications operated by Santiago Monsalve."
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,700;1,9..144,400&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg: #f5f1ea;
+        --bg-soft: #ede7dc;
+        --ink: #1c1917;
+        --ink-soft: #44403c;
+        --ink-mute: #78716c;
+        --rule: #d6cfc1;
+        --accent: #9a3f2a;
+        --max: 680px;
+        --gutter: clamp(1.25rem, 4vw, 2.5rem);
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        -webkit-text-size-adjust: 100%;
+      }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--ink);
+        font-family: 'Fraunces', Georgia, 'Times New Roman', serif;
+        font-size: 18px;
+        line-height: 1.65;
+        font-feature-settings: 'ss01', 'ss02', 'kern', 'liga';
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
+      }
+      /* Subtle paper texture via gradient noise */
+      body::before {
+        content: '';
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        z-index: 0;
+        background-image:
+          radial-gradient(at 12% 18%, rgba(154, 63, 42, 0.04) 0%, transparent 45%),
+          radial-gradient(at 88% 82%, rgba(28, 25, 23, 0.05) 0%, transparent 50%);
+      }
+      main {
+        position: relative;
+        z-index: 1;
+        max-width: var(--max);
+        margin: 0 auto;
+        padding: clamp(2rem, 8vw, 5rem) var(--gutter) 6rem;
+      }
+      /* Eyebrow */
+      .eyebrow {
+        font-family: 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+        font-size: 0.72rem;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: var(--accent);
+        margin: 0 0 1.5rem;
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+      }
+      .eyebrow::before {
+        content: '';
+        width: 1.75rem;
+        height: 1px;
+        background: var(--accent);
+      }
+      /* Title */
+      h1 {
+        font-family: 'Fraunces', serif;
+        font-weight: 500;
+        font-size: clamp(2.25rem, 6vw, 3.75rem);
+        line-height: 1.05;
+        letter-spacing: -0.02em;
+        margin: 0 0 1.25rem;
+        font-variation-settings: 'opsz' 144;
+      }
+      h1 em {
+        font-style: italic;
+        font-weight: 400;
+        color: var(--ink-soft);
+      }
+      /* Meta block */
+      .meta {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 0.78rem;
+        color: var(--ink-mute);
+        border-top: 1px solid var(--rule);
+        border-bottom: 1px solid var(--rule);
+        padding: 1rem 0;
+        margin: 2rem 0 3rem;
+        display: grid;
+        gap: 0.4rem;
+      }
+      .meta-row {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+      }
+      .meta-label {
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+      }
+      .meta-value {
+        text-align: right;
+      }
+      /* Body */
+      p,
+      ul,
+      ol {
+        margin: 0 0 1.25rem;
+        color: var(--ink-soft);
+      }
+      ul,
+      ol {
+        padding-left: 1.5rem;
+      }
+      li {
+        margin-bottom: 0.5rem;
+      }
+      li::marker {
+        color: var(--accent);
+      }
+      a {
+        color: var(--accent);
+        text-decoration: underline;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 3px;
+        transition: color 0.2s;
+      }
+      a:hover {
+        color: var(--ink);
+      }
+      strong {
+        color: var(--ink);
+        font-weight: 500;
+      }
+      em {
+        font-style: italic;
+      }
+      /* Section headings */
+      h2 {
+        font-family: 'Fraunces', serif;
+        font-weight: 500;
+        font-size: 1.4rem;
+        line-height: 1.25;
+        letter-spacing: -0.01em;
+        color: var(--ink);
+        margin: 3.5rem 0 1.25rem;
+        display: flex;
+        align-items: baseline;
+        gap: 1rem;
+      }
+      h2::before {
+        content: counter(section, decimal-leading-zero);
+        counter-increment: section;
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 0.75rem;
+        font-weight: 400;
+        letter-spacing: 0.1em;
+        color: var(--accent);
+        flex-shrink: 0;
+      }
+      main {
+        counter-reset: section;
+      }
+      h3 {
+        font-family: 'Fraunces', serif;
+        font-weight: 500;
+        font-size: 1.05rem;
+        font-style: italic;
+        color: var(--ink);
+        margin: 2rem 0 0.75rem;
+      }
+      /* Intro */
+      .lede {
+        font-size: 1.15rem;
+        line-height: 1.55;
+        color: var(--ink-soft);
+        margin-bottom: 1.5rem;
+      }
+      .lede:first-letter {
+        font-family: 'Fraunces', serif;
+        font-size: 3.5rem;
+        font-weight: 400;
+        font-style: italic;
+        float: left;
+        line-height: 0.9;
+        margin: 0.4rem 0.6rem 0 0;
+        color: var(--accent);
+        font-variation-settings: 'opsz' 144;
+      }
+      /* Note callout */
+      .callout {
+        border-left: 2px solid var(--accent);
+        padding: 1rem 0 1rem 1.25rem;
+        margin: 1.5rem 0;
+        background: var(--bg-soft);
+        font-size: 0.95rem;
+        color: var(--ink-soft);
+        border-radius: 0 4px 4px 0;
+      }
+      .callout-label {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 0.7rem;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+        color: var(--accent);
+        display: block;
+        margin-bottom: 0.4rem;
+      }
+      /* Definition list */
+      dl {
+        margin: 1rem 0 1.5rem;
+        padding: 0;
+        display: grid;
+        gap: 1rem;
+      }
+      dt {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 0.78rem;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--ink);
+        margin-bottom: 0.25rem;
+      }
+      dd {
+        margin: 0;
+        color: var(--ink-soft);
+        font-size: 0.97rem;
+        line-height: 1.55;
+      }
+      /* Footer */
+      footer {
+        border-top: 1px solid var(--rule);
+        margin-top: 5rem;
+        padding-top: 2rem;
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 0.78rem;
+        color: var(--ink-mute);
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+      footer a {
+        color: var(--ink-mute);
+        text-decoration: none;
+      }
+      footer a:hover {
+        color: var(--accent);
+      }
+      /* Entrance animation */
+      @keyframes rise {
+        from {
+          opacity: 0;
+          transform: translateY(8px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      main > * {
+        animation: rise 0.7s ease-out backwards;
+      }
+      main > *:nth-child(1) {
+        animation-delay: 0.05s;
+      }
+      main > *:nth-child(2) {
+        animation-delay: 0.1s;
+      }
+      main > *:nth-child(3) {
+        animation-delay: 0.15s;
+      }
+      main > *:nth-child(4) {
+        animation-delay: 0.2s;
+      }
+      main > *:nth-child(n + 5) {
+        animation-delay: 0.25s;
+      }
+      @media (prefers-reduced-motion: reduce) {
+        main > * {
+          animation: none;
+        }
+      }
+      /* Small screens */
+      @media (max-width: 540px) {
+        body {
+          font-size: 17px;
+        }
+        .meta-row {
+          flex-direction: column;
+          gap: 0.1rem;
+        }
+        .meta-value {
+          text-align: left;
+        }
+        h2 {
+          flex-direction: column;
+          gap: 0.25rem;
+          align-items: flex-start;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p class="eyebrow">Legal · Document</p>
+      <h1>Privacy <em>Policy</em></h1>
+      <div class="meta">
+        <div class="meta-row">
+          <span class="meta-label">Effective</span>
+          <span class="meta-value">May 6, 2026</span>
+        </div>
+        <div class="meta-row">
+          <span class="meta-label">Last updated</span>
+          <span class="meta-value">May 6, 2026</span>
+        </div>
+        <div class="meta-row">
+          <span class="meta-label">Operator</span>
+          <span class="meta-value">Santiago Monsalve</span>
+        </div>
+        <div class="meta-row">
+          <span class="meta-label">Contact</span>
+          <span class="meta-value"
+            ><a href="mailto:smonsalve386@gmail.com">smonsalve386@gmail.com</a></span
+          >
+        </div>
+      </div>
+      <p class="lede"
+        >This policy describes how Santiago Monsalve ("I", "me", or "the operator") collects, uses,
+        and protects information in connection with my personal portfolio website at
+        <a href="https://santiagomonsalve.com">https://santiagomonsalve.com</a> and any
+        applications, integrations, or projects I develop and operate, including applications that
+        connect to the Meta Platform (collectively, the "Services").</p
+      >
+      <p
+        >I take privacy seriously. This document is written to be read — not skimmed past. If
+        anything here is unclear, please reach out at
+        <a href="mailto:smonsalve386@gmail.com">smonsalve386@gmail.com</a>.</p
+      >
+      <h2>Scope</h2>
+      <p>This policy applies to:</p>
+      <ul>
+        <li
+          >Visitors to my portfolio website at
+          <a href="https://santiagomonsalve.com">https://santiagomonsalve.com</a>.</li
+        >
+        <li
+          >Operators and administrators of Facebook Pages who install or authorize any Meta Platform
+          application I develop.</li
+        >
+        <li
+          >End users whose public Facebook content (such as comments) may be processed by such
+          applications.</li
+        >
+      </ul>
+      <h2>Information I Collect</h2>
+      <h3>From the portfolio website</h3>
+      <p
+        >The website is a static portfolio. I do not run analytics tracking, advertising pixels, or
+        behavioral cookies. Standard server logs (IP address, user agent, timestamp, requested URL)
+        may be retained briefly by the hosting provider for security and operational purposes.</p
+      >
+      <h3>From Meta Platform applications</h3>
+      <p
+        >When a Page admin authorizes one of my applications via Facebook Login, the application may
+        access — strictly within the permissions granted — the following:</p
+      >
+      <ul>
+        <li
+          ><strong>Page metadata</strong>: page name, page ID, and the granting user's role on the
+          page.</li
+        >
+        <li
+          ><strong>Page Access Tokens</strong>: short-lived or long-lived tokens issued by Meta,
+          used to perform authorized actions on behalf of the page.</li
+        >
+        <li
+          ><strong>Public Page content</strong>: posts published by the page and public comments
+          left on those posts, including the commenter's display name and Facebook user ID.</li
+        >
+        <li
+          ><strong>Webhook event payloads</strong>: real-time notifications of comment activity
+          delivered by Meta when subscribed.</li
+        >
+      </ul>
+      <div class="callout">
+        <span class="callout-label">Note</span>
+        I do <strong>not</strong> collect private messages, personal contact information, friend
+        lists, photos beyond what is publicly attached to a page post, or any information beyond
+        what is necessary for the application's stated purpose.
+      </div>
+      <h2>How I Use Information</h2>
+      <p
+        >Information collected through Meta Platform applications is used solely to operate the
+        application's stated functionality, which may include:</p
+      >
+      <ul>
+        <li>Receiving comment notifications via webhook and parsing them.</li>
+        <li
+          >Classifying comment sentiment using third-party AI services (see
+          <em>Third Parties</em> below).</li
+        >
+        <li>Drafting suggested replies for human review and approval.</li>
+        <li>Posting human-approved replies back to the originating comment thread.</li>
+        <li>Maintaining operational logs for debugging and audit purposes.</li>
+      </ul>
+      <p
+        >I do not use this information for advertising, profiling, model training, profile-building
+        of individual commenters, or any purpose unrelated to the application's authorized
+        function.</p
+      >
+      <h2>Legal Basis</h2>
+      <p
+        >Where applicable (e.g., for users in the European Economic Area, the United Kingdom, or
+        other jurisdictions with comparable laws), processing is based on:</p
+      >
+      <ul>
+        <li
+          ><strong>Consent</strong>: Page admins explicitly grant permissions during the OAuth
+          authorization flow.</li
+        >
+        <li
+          ><strong>Legitimate interest</strong>: operating the requested service in a secure and
+          reliable manner.</li
+        >
+        <li
+          ><strong>Contractual necessity</strong>: where applicable, fulfilling the service the page
+          admin has chosen to enable.</li
+        >
+      </ul>
+      <h2>Third-Party Services</h2>
+      <p
+        >To operate, my applications may transmit limited data to vetted third-party providers. Each
+        provider is bound by its own privacy policy and data processing agreement.</p
+      >
+      <dl>
+        <dt>Meta Platforms, Inc.</dt>
+        <dd
+          >Source of webhook events and recipient of replies. Governed by Meta's
+          <a href="https://www.facebook.com/privacy/policy/" target="_blank" rel="noopener"
+            >Privacy Policy</a
+          >
+          and the Meta Platform Terms.</dd
+        >
+        <dt>Google (Gemini API)</dt>
+        <dd
+          >Comment text may be transmitted for sentiment classification and reply drafting. See
+          <a href="https://policies.google.com/privacy" target="_blank" rel="noopener"
+            >Google Privacy Policy</a
+          >.</dd
+        >
+        <dt>Google (Gmail and Sheets)</dt>
+        <dd
+          >Used for human-approval email workflow and operational logging. See
+          <a href="https://policies.google.com/privacy" target="_blank" rel="noopener"
+            >Google Privacy Policy</a
+          >.</dd
+        >
+        <dt>n8n / Railway</dt>
+        <dd
+          >Workflow execution and hosting. Used for orchestration only; no separate user-facing
+          account is provisioned for end users.</dd
+        >
+      </dl>
+      <h2>Data Retention</h2>
+      <p>I retain data only as long as necessary for the application's stated purpose:</p>
+      <ul>
+        <li
+          ><strong>Webhook payloads and execution logs</strong>: typically retained for up to 30
+          days for debugging, then deleted automatically.</li
+        >
+        <li
+          ><strong>Operational logs in spreadsheets</strong>: retained at the page admin's
+          discretion; admins may delete entries at any time.</li
+        >
+        <li
+          ><strong>Page Access Tokens</strong>: retained only while the page admin's authorization
+          remains active. Upon revocation, tokens are deleted.</li
+        >
+        <li
+          ><strong>Server logs</strong>: retained briefly per the hosting provider's standard
+          retention.</li
+        >
+      </ul>
+      <h2>Your Rights</h2>
+      <p>Depending on your jurisdiction, you may have the right to:</p>
+      <ul>
+        <li>Request access to information I hold about you.</li>
+        <li>Request correction of inaccurate information.</li>
+        <li>Request deletion of your information.</li>
+        <li>Object to or restrict certain processing.</li>
+        <li>Request data portability where technically feasible.</li>
+        <li>Withdraw consent at any time (without affecting prior lawful processing).</li>
+        <li>Lodge a complaint with a supervisory authority.</li>
+      </ul>
+      <p
+        >To exercise any of these rights, contact me at
+        <a href="mailto:smonsalve386@gmail.com">smonsalve386@gmail.com</a>. I will respond within 30
+        days.</p
+      >
+      <h3>Page admins: revoking access</h3>
+      <p
+        >You can revoke an application's access to your Facebook Page at any time through Facebook's
+        <em>Business Integrations</em> settings (Settings → Business Integrations → Remove). Once
+        revoked, the application can no longer access your page data.</p
+      >
+      <h3>Commenters: removing a comment from processing</h3>
+      <p
+        >If you would like a specific comment removed from any operational log I maintain, contact
+        me with the comment URL or ID and I will delete it.</p
+      >
+      <h2>Data Sharing</h2>
+      <p
+        >I do not sell, rent, or trade information. I share information only with the third-party
+        processors listed above, strictly to operate the Service. I will disclose information if
+        required by law, valid legal process, or to protect the rights, property, or safety of the
+        operator, users, or the public.</p
+      >
+      <h2>Security</h2>
+      <p>I take reasonable measures to protect data, including:</p>
+      <ul>
+        <li>HTTPS encryption for all data in transit.</li>
+        <li
+          >Access tokens stored as encrypted credentials within the workflow platform, not in
+          plaintext.</li
+        >
+        <li>Principle-of-least-privilege scoping for all OAuth permissions requested.</li>
+        <li>Prompt revocation upon admin request.</li>
+      </ul>
+      <p
+        >No method of transmission or storage is 100% secure, but I monitor for and respond to
+        incidents promptly.</p
+      >
+      <h2>International Transfers</h2>
+      <p
+        >Data may be processed in jurisdictions other than your own (e.g., the United States or the
+        European Union), as my providers operate globally. Where required, I rely on Standard
+        Contractual Clauses or equivalent safeguards offered by these providers.</p
+      >
+      <h2>Children's Privacy</h2>
+      <p
+        >The Services are not directed at children under 13 (or 16 in some jurisdictions), and I do
+        not knowingly collect information from them. If you believe a child has provided information
+        through one of my applications, contact me and I will delete it.</p
+      >
+      <h2>Meta Platform Compliance</h2>
+      <p
+        >Applications I develop for the Meta Platform comply with Meta's
+        <a href="https://developers.facebook.com/terms/" target="_blank" rel="noopener"
+          >Platform Terms</a
+        >
+        and
+        <a href="https://developers.facebook.com/devpolicy/" target="_blank" rel="noopener"
+          >Developer Policies</a
+        >. Specifically:</p
+      >
+      <ul>
+        <li>I request only the minimum permissions required for the stated functionality.</li>
+        <li
+          >I do not transfer Platform Data to ad networks, data brokers, or any prohibited
+          recipients.</li
+        >
+        <li>I delete Platform Data upon revocation of access or upon a valid deletion request.</li>
+        <li>I do not use Platform Data to discriminate or to make eligibility decisions.</li>
+      </ul>
+      <h2>Changes to This Policy</h2>
+      <p
+        >I may update this policy occasionally. The "Last updated" date at the top of this page
+        reflects the most recent revision. Material changes will be communicated to authorized page
+        admins by email where reasonably possible.</p
+      >
+      <h2>Contact</h2>
+      <p>For any privacy-related question, request, or concern:</p>
+      <dl>
+        <dt>Operator</dt>
+        <dd>Santiago Monsalve</dd>
+        <dt>Email</dt>
+        <dd><a href="mailto:smonsalve386@gmail.com">smonsalve386@gmail.com</a></dd>
+        <dt>Website</dt>
+        <dd><a href="https://santiagomonsalve.com">https://santiagomonsalve.com</a></dd>
+      </dl>
+      <footer>
+        <span>© 2026 Santiago Monsalve</span>
+        <span><a href="https://santiagomonsalve.com">Back to portfolio →</a></span>
+      </footer>
+    </main>
+  </body>
+</html>
